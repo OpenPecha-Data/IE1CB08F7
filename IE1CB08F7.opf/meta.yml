@@ -1,0 +1,47 @@
+id: IE1CB08F7
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T19:25:54.519284'
+last_modified: '2022-05-27T19:25:54.519298'
+parser: null
+source_metadata:
+  title: 'Asaṅga: Triśatikāyāḥ Prajñāpāramitāyāḥ Kārikāsaptatiḥ'
+  language: zh
+  base:
+    fCB3A:
+      title: Title
+      base_file: fCB3A.txt
+      order: 1
+    f8C4E:
+      title: Preface
+      base_file: f8C4E.txt
+      order: 2
+    f945E:
+      title: Verses 1-20
+      base_file: f945E.txt
+      order: 3
+    f8457:
+      title: Verses 21-40
+      base_file: f8457.txt
+      order: 4
+    fCDB9:
+      title: Verses 41-60
+      base_file: fCDB9.txt
+      order: 5
+    f00E3:
+      title: Verses 61-77
+      base_file: f00E3.txt
+      order: 6
+    fCC1C:
+      title: Colophon
+      base_file: fCC1C.txt
+      order: 7
+  chapter_to_tile: {}
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

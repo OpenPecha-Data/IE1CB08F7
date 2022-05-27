@@ -1,0 +1,454 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=1129' accesskey='1'>Asaṅga: Triśatikāyāḥ Prajñāpāramitāyāḥ Kārikāsaptatiḥ</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Asaṅga: Triśatikāyāḥ Prajñāpāramitāyāḥ Kārikāsaptatiḥ<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1129[5684]" value="5684" id="lancheckbox" checked >Sanskrit: San: Tucci (1978)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1129[5687]" value="5687" id="lancheckbox" checked >Chinese: Chi: Yìjìng 義淨, T.1514</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1129[5688]" value="5688" id="lancheckbox" checked >Chinese: Chi: Bodhiruci 菩提流支 v., T.1511</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1129[5689]" value="5689" id="lancheckbox" checked >Chinese: Chi: Bodhiruci 菩提流支 com., T.1511</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1129[5685]" value="5685" id="lancheckbox" checked >Tibetan: Tib: Tucci (1978)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1129[5686]" value="5686" id="lancheckbox" checked >English: Eng: Tucci (1978)</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="1129">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="1129">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='1129'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v1129">Search in Asaṅga: Triśatikāyāḥ Prajñāpāramitāyāḥ Kārikāsaptatiḥ</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=1129'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=1129'>Asaṅga: Triśatikāyāḥ Prajñāpāramitāyāḥ Kārikāsaptatiḥ</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1129" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="135105.Title|135106.Preface|135107.Verses1-20|135108.Verses21-40|135109.Verses41-60|135110.Verses61-77|135111.Colophon|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_135105.Title" border=0 hspace=2><a id="href_135105.Title" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1129&mid=1945405&level=1&cid=845517" class="ajax_tree0">Title
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_135106.Preface" border=0 hspace=2><a id="href_135106.Preface" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1129&mid=1945406&level=1&cid=845518" class="ajax_tree0">Preface
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_135107.Verses1-20" border=0 hspace=2><a id="href_135107.Verses1-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1129&mid=1945407&level=1&cid=845519" class="ajax_tree0">Verses 1-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_135108.Verses21-40" border=0 hspace=2><a id="href_135108.Verses21-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1129&mid=1945427&level=1&cid=845539" class="ajax_tree0">Verses 21-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_135109.Verses41-60" border=0 hspace=2><a id="href_135109.Verses41-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1129&mid=1945447&level=1&cid=845559" class="ajax_tree0">Verses 41-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_135110.Verses61-77" border=0 hspace=2><a id="href_135110.Verses61-77" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1129&mid=1945467&level=1&cid=845579" class="ajax_tree0">Verses 61-77
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_135111.Colophon" border=0 hspace=2><a id="href_135111.Colophon" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1129&mid=1945484&level=1&cid=845596" class="ajax_tree0">Colophon
+</td></tr></table>
+<script language=javascript>test('135110.Verses61-77|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=1129&amp;mid=1945467&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1129&amp;cid=845579&amp;mid=1945467&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=1129&amp;cid=845579&amp;mid=1945467&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><div class='kilderef' id='7868227'></div><div class='clear'></div><span id='7868227bi' class='paragraph'>
+							ātmagrāhasamo dosas ta x x x x x x x |<br />x x x x x grāhe hi agrāhagrāhatā matā ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><div class='kilderef' id='7868467'></div><div class='clear'></div><span id='7868467bi' class='paragraph'>
+							若起於法執 與我執過同<br />定執脱有情 是無執妄執&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><div class='kilderef' id='7868547'></div><div class='clear'></div><span id='7868547bi' class='paragraph'>
+							取我度爲過 以取彼法是<br />取度衆生故 不取取應知&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><div class='kilderef' id='7868627'></div><div class='clear'></div><span id='7868627bi' class='paragraph'>
+							此義云何。若如來有如是心。五陰中有衆生(6)可度者。此是取相過。以著彼法故。偈言。取我(7)度爲過故。以取彼法是者。以取五陰中是衆(8)生故。取度衆生故者。欲令衆生得解脱。有如(9)是相故。經復言須菩提如來説有我者。則非(10)有我。而毛道凡夫生者。以爲有我者。此義云(11)何。偈言。不取取應知故。此以何義。以彼不(12)實義。是故彼不取。以不取者即是毛道凡夫(13)取而即是不取故。言不取取故。又須菩提毛(14)道凡夫生者。如來説名非生者。不生聖人法(15)故言非生<br />(16)經曰。須菩提。於意云何。可以相成就得見如(17)來不。須菩提言。如我解如來所説義。不以相(18)成就得見如來。佛言。如是如是。須菩提。不以(19)相成就得見如來。佛言。須菩提。若以相成就(20)觀如來者。轉輪聖王應是如來。是故非以相(21)成就得見如來<br />(22)論曰。復有疑。雖相成就不可得見如來。以非(23)彼體。以如來法身爲體。而如來法身以見相(24)成就。比知則知如來法身爲福相成就。自下(25)經文爲斷此疑。云何斷疑。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><div class='kilderef' id='7868307'></div><div class='clear'></div><span id='7868307bi' class='paragraph'>
+							bkrol bya’i sems can ’dzin na ni | de la chos su ’dzin ’gyur te ||<br />bdag tu ’dzin daṅ ñes pa mtshuṅs | gzuṅ du med pas ’dzin par bśed ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><div class='kilderef' id='7868387'></div><div class='clear'></div><span id='7868387bi' class='paragraph'>
+							58. Though the teaching is avyākrta, it must not he considered as non-conducive to the illumination. Therefore only this jewel of the teaching is superior to any other jewel.<br />So the merit which is derived from this gnosis is incomparably superior to any other merit as stated in the sūtra p. 42, l. 4 ff.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868228bi' class='paragraph'>
+							na caiva rūpakāyena so ’numeyas tathāgataḥ |<br />dharmakāyo yataś cakravartī mābhūt tathāgataḥ ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868468bi' class='paragraph'>
+							不應以色體 唯如來法身<br />勿彼轉輪王 與如來齊等&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868548bi' class='paragraph'>
+							非是色身相 可比知如來<br />諸佛唯法身 轉輪王非佛&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868628bi' class='paragraph'>
+							此義云何。有人言。福徳能成是相果報。以成(29)是相故。則知福徳力得大菩提。若如是如來(a1)則以相成就得阿耨多羅三藐三菩提。爲遮(2)此故。如經。若以相成就觀如來者。轉輪聖王(3)應是如來。是故非以相成就得見如來故此(4)義云何。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868308bi' class='paragraph'>
+							gaṅ phyir ’khor lo sgyur ba yaṅ | de bźin gśegs pas brgol ’gyur phyir ||<br />de bźin gśegs pa chos kyi sku | gzugs kyi sku las brtag pa min ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868388bi' class='paragraph'>
+							59. As regards (the fourfold determination of difference in merit concerning) number, power, kind and connection, there is nothing in this world which, thoroughly examined, can he taken as an object of comparison with it. (refers to p. 42, l. 6 with full list at p. 35, l. 10).<br />[End of chapter 24]<br />One may urge: if the nature of dharma is pure identity, according to p. 41, l. 16, then there would he nobody to lead to it, nor anybody who could he led; this would contradict the statement of the Buddha that his aim is the liberation of beings. In order to meet this objection the sūtra says: nāsti ... parimocitaḥ p. 42, l. 10.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868229bi' class='paragraph'>
+							na ca lakṣaṇavaipākyapuṇy. x x x x x x |<br />dharmakāyasya lābho hi upāyo yad vilakṣaṇaḥ ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868469bi' class='paragraph'>
+							即具相果報 圓滿福不許<br />能招於法身 由方便異性&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868549bi' class='paragraph'>
+							非相好果報 依福徳成就<br />而得眞法身 方便異相故&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868629bi' class='paragraph'>
+							此明何義。法身者。是智相身。福徳者。是異相(8)身故<br />(9)經曰。爾時世尊而説偈言<br />(10)   若以色見我 以音聲求我<br />(11)   是人行邪道 不能見如來<br />(12)   彼如來妙體 即法身諸佛<br />(13)   法體不可見 彼識不能知<br />(14)論曰。此二偈説何義。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868309bi' class='paragraph'>
+							mtshan ni rnam par smin pa yi | bsod nams phun sum tshogs pa las ||<br />chos sku ’thob par mi bźed do | thabs daṅ mtshan ñid mi ’dra’ phyir ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868389bi' class='paragraph'>
+							60. Because the creatures are identical with the absolute, no creature is liherated by the Victorious Ones, in as much as the elements composing the illusory person (skandha) along with names, (viz. nāmakāya) are not outside the absolute. Suppose that it were affirmed that within the skand has there is a soul to he liberated; this would amount to saying that there is a being (sattva), and therefore the sūtra adds: ātmagrāha – agrāha p. 42, l. 13.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868230bi' class='paragraph'>
+							rūpānuśravamātreṇa na buddhajñaḥ pṛthagjanaḥ |<br />tathatādharmakāyo hi yato ’vijñānagocaraḥ ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868470bi' class='paragraph'>
+							唯見色聞聲 是人不知佛<br />此眞如法身 非是識境界&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868550bi' class='paragraph'>
+							唯見色聞聲 是人不知佛<br />以眞如法身 非是識境故&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868630bi' class='paragraph'>
+							此示何義。如來法身不應如是見聞。不應如(18)是見聞者。不應如是見色聞聲。以何等人不(19)能見。謂凡夫不能見故。偈言。唯見色聞聲是(20)人不知佛故。如經。是人行邪道不能見如來(21)故。是人者。是凡夫人不能見眞如法身。如經。(22)彼如來妙體即法身諸佛。法體不可見彼識(23)不能知故<br />(24)經曰。須菩提。於意云何。如來可以相成就。得(25)阿耨多羅三藐三菩提耶。須菩提。莫作是念。(26)如來以相成就得阿耨多羅三藐三菩提。須(27)菩提。汝若作是念。菩薩發阿耨多羅三藐三(28)菩提心者。説諸法斷滅相。須菩提。莫作是(29)念。何以故。菩薩發阿耨多羅三藐三菩提心(b1)者。不説諸法斷滅相故。須菩提。若善男子(2)善女人。以滿恒河沙等世界七寶持用布施。(3)若有菩薩知一切法無我。得無生法忍。此功(4)徳勝前所得福徳。須菩提。以諸菩薩不取福(5)徳故。須菩提白佛言。世尊。菩薩云何不取(6)福徳。佛言。須菩提。菩薩受福徳不取福徳。是(7)故菩薩取福徳(8)論曰。有人起如是心。若不依福徳得大菩提。(9)如是諸菩薩摩訶薩則失福徳。及失果報。自(10)下經文爲斷此疑。云何斷疑。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868310bi' class='paragraph'>
+							chos sku de bźin ñid yin te | rnam śes spyod yul bźin pa’i phyir ||<br />gzugs daṅ de ni sgra tsam las | skye bo saṅs rgyas mi rtog so ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868390bi' class='paragraph'>
+							61. If one maintains the existence of a dharma whatsoever, one commits the same mistake as that of asserting the existence of a self (ātman). If (the existence) of a creature (to be) liberated is admitted, this is considered to he the (erroneous) admission of something which is no object of admission.<br />[End of chapter 25]<br />It may now he urged: You said that the Tathāgata cannot he seen as a perfection of signs (laksaṇasaṃpat) because he is dharmakāya, the ahsolute; but nevertheless this dharmakiāya, which is essentially the Tathāgata, can he inferred from that perfection of signs which make us know his perfection of merits. Therefore the sātra adds: tat kiṃ manyase... p. 42, l. 17.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868231bi' class='paragraph'>
+							na ca puṇyas x x x x x x x x x x x x |<br />kṣāntilābhe ’pi nocchedo nirmalasyāsya lābhataḥ ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868471bi' class='paragraph'>
+							其福不失亡 果報不斷絶<br />得忍亦不斷 以獲無垢故&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868551bi' class='paragraph'>
+							不失功徳因 及彼勝果報<br />得勝忍不失 以得無垢果&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868631bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868311bi' class='paragraph'>
+							bsod nams chud zar ’gyur ba med | de yi ’bras bu ’aṅ ’chad mi ’gyur ||<br />dge ni dri med thob pas na | bzod pa thob kyaṅ chad mi ’gyur ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868391bi' class='paragraph'>
+							62. Not indeed on account of the visible body can the Tathiigata he inferred, since He is only the ahsolute (dharmakāya); the Universal Ruler (cakravartin) (who is equally possessed of the characteristic signs of the great man) cannot he taken for the Tathāgata (as could happen if the mere presence of the signs is taken as indicative of the Buddha).<br />That perfection of signs is certainly the maturation of the merits accumulated, but this is not the cause of supreme illumination: because, as concluded by the sūtra p. 43, l. 3 ff.:&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868232bi' class='paragraph'>
+							punaḥ puṇyanimittaṃ hi tasmād dṛṣṭāntadeśanā |<br />tat puṇyasyāvipākatvān nodgrahaḥ saparigrahaḥ ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868472bi' class='paragraph'>
+							更論於福因 爲此陳其喩<br />彼福無報故 正取非越取&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868552bi' class='paragraph'>
+							示勝福徳相 是故説譬喩<br />是福徳無報 如是受不取&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868632bi' class='paragraph'>
+							此義云何。雖不依福徳得眞菩提。而不失福(16)徳及彼果報。何以故。以能成就智慧莊嚴功(17)徳莊嚴故。何故依彼福徳重説譬喩。偈言。得(18)勝忍不失以得無垢果故。此義云何。有人起(19)如是心。諸菩薩摩訶薩得無生法忍。以得出(20)世間智。失彼福徳及以果報。爲遮此故。示現(21)福徳不失。而更得清淨殊勝功徳。是故不失。(22)如經何以故菩薩發阿耨多羅三藐三菩提心(23)者。於法不説斷滅相故。若復有菩薩知一切(24)法無我。得無生法忍者。有二種無我。不生二(25)種無我相。是故受而不取。如經佛言。須菩提。(26)菩薩受福徳不取福徳。是故菩薩取福徳故。(27)云何菩薩受福徳不取福徳。偈言。是福徳無(28)報。如是受不取故。此義云何。取者彼福徳得(29)有漏果報。以有漏果報故。彼福徳可訶。如是(c1)取者名之爲取。如取非道故。此福徳無報。無(2)報者。無彼有漏報。是故此福徳受而不取(3)經曰。須菩提。若有人言。如來若去若來。若住(4)若坐若臥。是人不解我所説義。何以故如來(5)者無所至去無所從來。故名如來(6)論曰。若諸菩薩不受彼果報。云何諸菩薩福(7)徳衆生受用。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868312bi' class='paragraph'>
+							de lta bas na bsod nams phyir | dpe bstan pa ni yan brjod do ||<br />bsod nams des ni rnam smin med | de phyir ’dzin bcas log ’dzin min ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868392bi' class='paragraph'>
+							63. The dharmakāya is not said to he obtained by a perfect accumnlation of merits, the maturation of which are the (thirtytwo) signs of the great man; in fact the means (in both cases) are different; (viz. gnosis being the very essence of dharmakāya, that dharmakāya cannot he identical with merits).<br />Two gāthās, giving a resumé of these statements, follow in the sūtra, p. 43, l. 6-9.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868233bi' class='paragraph'>
+							tan nirmāṇaphalaṃ teṣāṃ puṇya x x x x x x |<br />anābhogena yat karma buddhāḥ kurvanti dikṣu ca ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868473bi' class='paragraph'>
+							彼福招化果 作利有情事<br />彼事由任運 成佛現諸方&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868553bi' class='paragraph'>
+							是福徳應報 爲化諸衆生<br />自然如是業 諸佛現十方&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868633bi' class='paragraph'>
+							此義云何。明諸佛化身有用。彼法身諸佛。不(11)去不來故。偈言。自然如是業。諸佛現十方故。(12)此復何義。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868313bi' class='paragraph'>
+							de dag gi ni bsod nams de’i | ’bras bu sprul daṅ sems can gdul ||<br />saṅs rgyas rnams gyi ’phrin las ’di | lhun gyis grub pa phyogs na mdzad ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868393bi' class='paragraph'>
+							64. The profane cannot know the Buddha, because they only see his figure and hear his voice, In fact the ahsolute (dharmakāya), which is the only reality, transcends the field of discursive intelligence.<br />[End of chapter 26]<br />Somebody may argue that in so far as merits are not conducive to illumination, the meritorious deeds of the bodhisattva would have no result. In order to eliminate this doubt the sūtra answers: tat kiṃ manyase etc. p. 43, l. 10.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868234bi' class='paragraph'>
+							gatyādayas tu nirmāṇair buddhās tv avicalāḥ sadā |<br />dharmadhātau ca tatsthānaṃ naikatvānyatvato matam ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868474bi' class='paragraph'>
+							去來等是化 正覺常不動<br />彼於法界處 非一異應知&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868554bi' class='paragraph'>
+							去來化身佛 如來常不動<br />於是法界處 非一亦不異&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868634bi' class='paragraph'>
+							此明不去不來義故。如經何以故如來者。無(16)所至去無所從來故。此義云何。若如來有去(17)來差別。即不得言常。如是住常如是住者。不(18)變不異故<br />(19)經曰。須菩提若善男子善女人。以三千大千(20)世界微塵。復以爾許微塵世界碎爲微塵阿(21)僧祇。須菩提於意云何。是微塵衆寧爲多不。(22)須菩提言。彼微塵衆甚多。世尊。何以故。若是(23)微塵衆實有者。佛則不説是微塵衆。何以故。(24)佛説微塵衆則非微塵衆。是故佛説微塵衆。(25)世尊如來所説三千大千世界。則非世界。是(26)故佛説三千大千世界。何以故。若世界實有(27)者。則是一合相。如來説一合相則非一合相。(28)是故佛説一合相。佛言。須菩提。一合相者。則(29)是不可説。但凡夫之人貪著其事。何以故。須(a1)菩提若人如是言。佛説我見人見衆生見壽(2)者見。須菩提於意云何。是人所説爲正語不。(3)須菩提言。不也世尊。何以故。世尊如來説。我(4)見人見衆生見壽者見。即非我見人見衆生(5)見壽者見。是名我見人見衆生見壽者見。須(6)菩提菩薩發阿耨多羅三藐三菩提心者。於(7)一切法應如是知。如是見如是信。如是不住(8)法相。何以故。須菩提所言法相。法相者。如(9)來説即非法相。是名法相。須菩提若有菩薩(10)摩訶薩。以滿無量阿僧祇世界七寶持用布(11)施。若有善男子善女人。發菩薩心者。於此般(12)若波羅蜜經乃至四句偈等。受持讀誦爲他(13)人説。其福勝彼無量阿僧祇。云何爲人演説。(14)而不名説是名爲説<br />(15)論曰。碎微塵譬喩者。示現何義。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868314bi' class='paragraph'>
+							sprul pa rnams kyis bźud la sogs | rtag tu mi g-yo saṅs rgyas rnams ||<br />de dag chos kyi dbyiṅs gnas pa | gcig daṅ tha dad ma yin bźed ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868394bi' class='paragraph'>
+							65. Even so, that merit is in no way lost nor its fruit suppressed; even if one possesses the supreme patience consisting in the realization that all dharmas are not born, no annihilation of merits (p. 43 last line p. 44 first line) follows from it, because one has obtained the realization of the spotless reality.<br />[End of chapter 27]&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868235bi' class='paragraph'>
+							rajomaṣīkriyā dhātor dṛṣṭāntas tasya dyotakaḥ |<br />maṣīkaraṇatā kleśakṣayasyeha nidarśanam ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868475bi' class='paragraph'>
+							微塵將作墨 喩顯於法界<br />此論造墨事 爲＊彰煩惱盡&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868555bi' class='paragraph'>
+							世界作微塵 此喩示彼義<br />微塵碎爲末 示現煩惱盡&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868635bi' class='paragraph'>
+							此明何義。偈言於是法界處非一亦非異故。(19)彼諸佛如來。於眞如法界中。非一處住。亦非(20)異處住。爲示此義故。説世界碎微塵喩。此喩(21)示現何義。偈言微塵碎爲末示現煩惱盡故。(22)此喩非聚集微塵衆。示現非一喩。此義云何。(23)偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868315bi' class='paragraph'>
+							khams rdul phye mar bya ba ni | de na de yi dpe yin no ||<br />’di la phye mar bya ba ni | non moṅs zad pa’i dpe yin no ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868395bi' class='paragraph'>
+							66. Therefore in order to explain again that merit (is not in vain), another example is taught: (p. 43, l. 18 ff.); but since this merit do es not lead to a retribution (because illumination is asaṃskṛta, unconditioned), any acceptance of it do es not hring with it a wrong grasping of it (udgraha) as something existent; (this in fact would he a wrong view, sāsrava).<br />[End of chapter 28]<br />But it may he argued that, if the Bodhisattvas do not take upon themselves the fruit of their merits, how can this fruit he known and how can the visible activity of the Buddhas he explained? p. 44, l. 7 ff. api tu khalu ... yaḥ kaścid evaṃ vadet ...&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868236bi' class='paragraph'>
+							asaṃcayatvāpiṇḍatvam anekatvanidarśanam |<br />saṃhatasthānatā tasmin nānyatve ca nidarśanam ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868476bi' class='paragraph'>
+							非聚非集性 顯是非一性<br />於彼總集性 明其非異性&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868556bi' class='paragraph'>
+							非聚集故集 非唯是一喩<br />聚集處非彼 非是差別喩&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868636bi' class='paragraph'>
+							此義云何。如微塵碎爲末非一處住。以無有(27)聚集物故。亦非異處差別。以聚集微塵差別(28)不可得故。以差別不住故。如是諸佛如來。遠(29)離煩惱障。住彼法界中。非一處住亦非異處(b1)住。如是三千世界一合相喩。非聚集故。此以(2)何義。如經如來説一合相則非一合相是故如(3)來説一合相故。若實有一物聚集。如來則不(4)説微塵聚集。如是若實有一世界。如來則不(5)説三千大千世界。如經若世界實有者則是一(6)合相故。但凡夫之人貪著其事者。以彼聚集(7)無物可取。虚妄分別。是故凡夫妄取。若有實(8)者即是正見故知妄取。何故凡夫無物而取(9)物。如經佛言須菩提一合相者則是不可説但(10)凡夫之人貪著其事如是等。此示何義。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868316bi' class='paragraph'>
+							tshogs min ril po ma yin pas | ’du ma ñid kyi dpe yin no ||<br />de la ’dus par gnas pa ni | tha dad ma yin dpe yin no ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868396bi' class='paragraph'>
+							67-68. The miraculous fruit of that merit which they accumulate and their conversion of creatures is the work which the Buddhas accomplish in the (ten) quarters, viz. (everywhere and for ever) automatically (anābhogena).<br >Their (apparent) (actions such as) going, and coming are accomplishad by miraculous emanations; but in reality the Buddhas are for ever motionless. Their abiding in the absolute (dharmadhātu) is stated to he neither identity with nor diversity from it.<br />[End of chapter 29]<br />What then is the meaning of the example of the atoms which follows in the sūtra p. 44, l. 12 ff. ?&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868237bi' class='paragraph'>
+							vyavahāramātratāyā <i>bālā</i>nām udgraho ’nyathā |<br />dvayābhāvān na bodhyāptiḥ prahāṇād ātmadharmayoḥ ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868477bi' class='paragraph'>
+							不了但俗言 諸凡愚妄執<br />斷我法二種 非證覺無故&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868557bi' class='paragraph'>
+							但隨於音聲 凡夫取顛倒<br />非無二得道 遠離於我法&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868637bi' class='paragraph'>
+							796b13-19: 如經何以故。須菩提。若人如是言。佛説我見(14)人見衆生見壽者見。如是乃至是名我見人(15)見衆生見壽者見故。此復何義。偈言非無二(16)得道遠離於我法故。此義云何。非無我無法。(17)離此二事而得菩提。云何得菩提。遠離彼二(18)見故得於菩提。偈言遠離於我法故。此復何(19)義。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868317bi' class='paragraph'>
+							tha sñad tsam du ma śes phyir | byis pa gźan du log par ’dzin ||<br />bdag daṅ chos gñis med pa’i phyir | de bas byaṅ chub thob mi ’gyur ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868397bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868238bi' class='paragraph'>
+							tasmād dṛṣṭir adṛṣṭiś ca nairarthyābhūtakalpataḥ |<br />sūkṣmam āvaraṇaṃ hy etat tathā jñānāt prahīyate ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868478bi' class='paragraph'>
+							是故見無見 無境虚妄執<br />由此是細障 如是知故斷&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868558bi' class='paragraph'>
+							見我即不見 無實虚妄見<br />此是微細障 見眞如遠離&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868638bi' class='paragraph'>
+							是故見即不見。無其實義以虚妄分別。以是(23)無我。是故如來説彼我見即是不見。以其無(24)實。無實者。即是無物。以是義故。説我見即是(25)虚妄見。如是示現我見不見故。見法者亦是(26)不見。如經須菩提菩薩發阿耨多羅三藐三(27)菩提心於一切法應如是知如是見如是信<br />(28)如是不住法相故。此復何義。以見法相即不(29)見相。如彼我見即非見故。何故此二見説名(1)不見。偈言此是微細障見眞如遠離故。此復(2)云何。彼見我見法。此是微細障。以不見彼(3)二故。是以見法而得遠離。偈言見眞如遠離(4)故。又如是知如是見如是信者。此示何義。偈(5)言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868318bi' class='paragraph'>
+							de phyir don med nor brtags pas | lta ba med daṅ lta bar ’gyur ||<br />de gñis sgrib pa phra ba ste | de ltar śes pas spoṅ bar ’gyur ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868398bi' class='paragraph'>
+							69. When the sūtra refers as an example to the reducing of the universe into a dust of atoms 1), this example is meant to make clear the same idea. The expression “reducing into dust” is intended to show (how the) destruction of the defilement should be understood.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868239bi' class='paragraph'>
+							jñānadvayasamādhānapraheyaṃ tac ca deśitam |<br />nirmāṇaiḥ kaśaṇāt puṇyaṃ tad buddhānāṃ na nākṣayam ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868479bi' class='paragraph'>
+							由得二種智 及定彼方除<br />陳福明化身 非無無盡福&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868559bi' class='paragraph'>
+							二智及三昧 如是得遠離<br />化身示現福 非無無盡福&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868639bi' class='paragraph'>
+							此義云何。示現世智第一義智。及依止三昧(9)得遠離彼障。是故重説勝福譬喩。此示何義。(10)偈言化身示現福非無無盡福故。此復何義。(11)雖諸佛自然化身作業。而彼諸佛化身説法。(12)有無量無盡無漏功徳故。云何爲人演説而(13)不名説是名爲説者。何故如是説。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868319bi' class='paragraph'>
+							de yaṅ ye śes rnam gñis daṅ | tiṅ ṅe ’dzin gyi spaṅ par bstan ||<br />saṅs rgyas rnams kyi sprul rnams kyis | bsad pa’i bsod nams zad mi ’gyur ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868399bi' class='paragraph'>
+							70. The fact that there is no condition either of mass (saṃcaya) (p. 44, l. 17) of atoms nor of matter, indicates that things are not unity. The fact that a condition of collection exists, indicates that there is no diversity. (Just as when the atoms are reduced into dust they are neither identical with the thing they formed nor different, because the parts and the whole cannot be conceived one without the other, though they represent two different conditions of being, so also the state of Buddhahood is neither identical with the dharmadhātu nor different).<br />p. 45, l. 7).<br />But how is it that the profane thinks to grasp what in reality cannot be grasped? (sa ca bālapṛthagjanair udgrhītaḥ p. 45 l. 7)&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868240bi' class='paragraph'>
+							nirmito ’smīti cātmānaṃ kāśayantas tathāgatāḥ |<br />prakāśayanti n<i>ātmānaṃ</i> tasmāt sā kāśanā satī ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868480bi' class='paragraph'>
+							諸佛説法時 不言身是化<br />由不自言故 是其眞實説&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868560bi' class='paragraph'>
+							諸佛説法時 不言是化身<br />以不如是説 是故彼説正&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868640bi' class='paragraph'>
+							此義云何。若化身諸佛説法時。不言我是化(17)身。是故彼所説是正説。若不如是説者。可化(18)衆生不生敬心。何以故。以不能利益衆生。即(19)彼説是不正説。是故不説我是化佛<br />(20)經曰<br />(21)一切有爲法 如星翳燈幻<br />(22)露泡夢電雲 應作如是觀<br />(23)論曰。復有疑。若諸佛如來常爲衆生説法。云(24)何言如來入涅槃爲斷此疑。是故如來説彼(25)偈喩。此義云何。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868320bi' class='paragraph'>
+							de bźin gśegs rnams ston pa ni | na ni sprul pa yin no zes ||<br />bdag ñid ston par mi mdzad phyir | bstan pa de ni legs pa yin ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868400bi' class='paragraph'>
+							71. Since the profane possesses only a wordly knowledge, he grasps all this, i.e, the nction of a mass or of matter referred to in the above example, in a different, way (from what it really is); it is in fact impossible that the illumination be obtained by the suppression of both, the ego (ātman) and the elements of existence (dharma), because both do not exist (and therefore cannot be suppressed).<br />[End of chapter 30]<br />So it is not the suppression of either the atom or of the elements of existence which leads to illumination, but the suppression of the wrong views concerning them. (p. 45, l. 11-12 yā sā... ātmadṛṣṭis... etc.].&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868241bi' class='paragraph'>
+							saṃskāro na tathā nānyaṃ nirvāṇaṃ hi tathāgate |<br />navadhā saṃbhūtasyeha saṃyagjñānaparīkṣaṇāt ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868481bi' class='paragraph'>
+							如來涅槃證 非造亦不殊<br />此集造有九 以正智觀故&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868561bi' class='paragraph'>
+							非有爲非離 諸如來涅槃<br />九種有爲法 妙智正觀故&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868641bi' class='paragraph'>
+							此義云何。諸佛涅槃非有爲法。亦不離有爲(29)法。何以故。以諸佛得涅槃。化身説法示現世(1)間行。爲利益衆生故。此明諸佛以不住涅槃(2)以不住世間故。何故諸佛示現世間行。而不(3)住有爲法中。偈言九種有爲法妙智正觀故。(4)此以何義。如星宿等相對法。九種正觀故。此(5)九種正觀。於九種境界應知觀何境界。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868321bi' class='paragraph'>
+							de bźin gśegs pa’i mya nan ’das | ’du byed ma yin gźan pa bźin ||<br />’dir ni yaṅ dag śes pa yis | ’dus byas rnam pa dgur brtag phyir ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868401bi' class='paragraph'>
+							72. Therefore both the view (viz. the affermative assumption of the existence of the ego or of the elements, dharma) as well as the non-view, (viz. the negation of something) derive from the assumption of something unreal or wrongly conceived. Both views (being originated from wrong imagination) are a subtle cover (āvaraṇa) which is eliminated by the knowledge of truth (as propounded in the sūtra).<br />But then the sūtra adds: evam... jñātavyā... adhimoktavyāḥ p. 45, l. 14 ff. What is the meaning of these words?&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868242bi' class='paragraph'>
+							dṛṣṭir nimittaṃ vijñānaṃ pratiṣṭhādehabhogatā |<br />atītaṃ vartamānaṃ ca parīkṣyaṃ cāpy anāgatam ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868482bi' class='paragraph'>
+							見相及與識 居處身受用<br />過去并現存 未至詳觀察&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868562bi' class='paragraph'>
+							見相及於識 器身受用事<br />過去現在法 亦觀未來世&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868642bi' class='paragraph'>
+							云何觀九種法。譬如星宿爲日所映有而不(9)現。能見心法亦復如是。又如目有＊翳則見毛(10)輪等色。觀有爲法亦復如是。以顛倒見故。又(11)如燈識亦如是。依止貪愛法住故。又如幻所(12)依住處亦如是。以器世間種種差別無一體(13)實故。又如露身亦如是。以少時住故。又如泡(14)所受用事亦如是。以受想因三法不定故。又(15)如夢過去法亦如是。以唯念故。又如電現在(16)法亦如是。以刹那不住故。又如雲未來法亦(17)如是。以於子時阿黎耶識。與一切法爲種子(18)根本故。觀如是九種法。得何等功徳成就何(19)智。偈言&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868322bi' class='paragraph'>
+							lta daṅ mtshan rnam ses daṅ | gnas daṅ lus daṅ loṅs spyod daṅ ||<br />’das pa daṅ ni da ltar daṅ | ma ’oṅs brtag par bya ba yin ||&nbsp;</span></div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868402bi' class='paragraph'>
+							73. (Those words) indicates that that cover should be eliminated by the twofold knowledge (viz. the ordinary and the transcendental) and by concentration upon it,<br />[End of chapter 31]<br />(Anyhow the merit derived from the gift of this gnosis leading to the realization of truth is immensely great. This is stated in the sūtra p. 45, l. 19 ff. with the purpose of making it sure that) such merit is not not indestructible, because it has been revealed by the emanations of the Buddha, (though the Tathāgata rests forever in his transcendent inactivity). Why then the sūtra asks kathaṃ saṃprakāsayet? p. 46, l. 3.4.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'><div class='Sanskrit'><span id='7868243bi' class='paragraph'>
+							lakṣaṇasyopabhogasya pravṛtteś ca parīkṣaṇāt |<br />nirmalāṃ teṣu vaśitāṃ saṃskāreṣu samāpnute ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7868227";
+							kilderef = "TśPk San: Tucci (1978)  61 - San: Tucci (1978) 77";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868483bi' class='paragraph'>
+							由觀察相故 受用及遷流<br />於有爲事中 獲無垢自在&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7868467";
+							kilderef = "TśPk Chi: Yìjìng 義淨, T.1514  886b12 - Chi: Yìjìng 義淨, T.1514 c16";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868563bi' class='paragraph'>
+							觀相及受用 觀於三世事<br />於有爲法中 得無垢自在&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7868547";
+							kilderef = "TśPk Chi: Bodhiruci 菩提流支 v., T.1511  794c03 - Chi: Bodhiruci 菩提流支 v., T.1511 797a21";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Chinese'><span id='7868643bi' class='paragraph'>
+							此義云何。觀有爲法三種。一觀有爲法以觀(23)見相識。二者觀受用。以觀器世間等。以何處(24)住。以何等身受用何等。三者觀有爲行。以何(25)等法三世轉差別。如是觀一切法。於世間法。(26)中得自在故。偈言於有爲法中得無垢自在(27)故<br />(28)經曰。佛説是經已。長老須菩提。及諸比丘比(1)丘尼。優婆塞優婆夷。菩薩摩訶薩。一切世間(2)天人。阿修羅乾闥婆等。聞佛所説皆大歡喜(3)信受奉行&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7868627";
+							kilderef = "TśPk Chi: Bodhiruci 菩提流支 com., T.1511  794c5 - Chi: Bodhiruci 菩提流支 com., T.1511 797a22";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='Tibetan'><span id='7868323bi' class='paragraph'>
+							mtshan ñid daṅ ni log pa daṅ | ’jug pa rnams ni brtag pa las ||<br />’du byed rnams kyi gźi dag la | dbaṅ byed dri ma med pa ’thob ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7868307";
+							kilderef = "TśPk Tib: Tucci (1978)  - Tib: Tucci (1978) ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:15.666666666667%;'><div class='English'><span id='7868403bi' class='paragraph'>
+							74. When the Tathāgatas preach (the Law) (for the benefit of the creatures), they do not preach the (existence) of a self saying “I am a miraculous emanation”; and therefore, because they do not preach the self, this preaching is excellent.<br />But is it not stated that the Buddhas preach without end the Law through infinite emanations (nirmāṇa)? How then can they abide in a nirvanic condition?&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7868387";
+							kilderef = "TśPk Eng: Tucci (1978)  - Eng: Tucci (1978) ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div><div class='textvar' style='width:15.666666666667%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=34517470-49d8-11e0-8f33-001cc4df1abe</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
